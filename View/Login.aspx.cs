@@ -21,5 +21,4 @@ namespace BookShare
         {
             //Minh comment
         }
-    }
 }
