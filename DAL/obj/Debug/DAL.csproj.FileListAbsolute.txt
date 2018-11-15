@@ -1,0 +1,6 @@
+C:\Users\nguye\Desktop\MyBookShare\DAL\bin\DAL.dll.config
+C:\Users\nguye\Desktop\MyBookShare\DAL\bin\DAL.dll
+C:\Users\nguye\Desktop\MyBookShare\DAL\bin\DAL.pdb
+C:\Users\nguye\Desktop\MyBookShare\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\nguye\Desktop\MyBookShare\DAL\obj\Debug\DAL.dll
+C:\Users\nguye\Desktop\MyBookShare\DAL\obj\Debug\DAL.pdb

@@ -4,3 +4,11 @@ C:\Users\Nam Nguyen\Desktop\NamNT_SE05438_PE_PRN292\MyBookShare\View\bin\View.dl
 C:\Users\Nam Nguyen\Desktop\NamNT_SE05438_PE_PRN292\MyBookShare\View\bin\View.pdb
 C:\Users\Nam Nguyen\Desktop\NamNT_SE05438_PE_PRN292\MyBookShare\View\obj\Debug\View.dll
 C:\Users\Nam Nguyen\Desktop\NamNT_SE05438_PE_PRN292\MyBookShare\View\obj\Debug\View.pdb
+C:\Users\nguye\Desktop\MyBookShare\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\nguye\Desktop\MyBookShare\View\obj\Debug\View.dll
+C:\Users\nguye\Desktop\MyBookShare\View\obj\Debug\View.pdb
+C:\Users\nguye\Desktop\MyBookShare\View\bin\View.dll.config
+C:\Users\nguye\Desktop\MyBookShare\View\bin\View.dll
+C:\Users\nguye\Desktop\MyBookShare\View\bin\View.pdb
+C:\Users\nguye\Desktop\MyBookShare\View\bin\DAL.dll
+C:\Users\nguye\Desktop\MyBookShare\View\bin\DAL.pdb

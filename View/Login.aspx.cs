@@ -19,17 +19,7 @@ namespace BookShare
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            userservice.userservice service = new userservice.userservice();
-            userservice.user user = service.checklogin(request.form["usernametxt"], request.form["passwordtxt"]);
-
-            if (user == null) errortxt.text = "username or password is incorrect";
-            else
-            {
-                errortxt.text = user.fullname;
-                session.add("currentuser", user);
-                session.add("username", user.username);
-                response.redirect("home.aspx");
-            }
+            
         }
     }
 }

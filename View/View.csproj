@@ -95,9 +95,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyBookShare\Dal.csproj">
+    <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{668ad236-604c-46a2-8c88-51550cf59629}</Project>
-      <Name>Dal</Name>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
