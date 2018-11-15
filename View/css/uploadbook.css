@@ -1,0 +1,348 @@
+﻿
+.title-upload {
+    display: flow-root;
+    background: #F7F7F7;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 10px 10px;
+}
+
+    .title-upload i {
+        float: left;
+        width: 80%;
+        text-align: left;
+    }
+
+    .title-upload > i > b {
+        margin-left: 10px;
+    }
+
+.upload-image {
+    display: block;
+    font-family: sans-serif;
+    height: 160px;
+    padding: 25px 0;
+    background: #EFF9FE;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px dashed #0099E2;
+}
+
+    .upload-image input {
+        margin-bottom: 5px;
+    }
+
+.info-book {
+    width: 100%;
+}
+
+.elements {
+    display: flex;
+    padding-top: 7px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+    .elements > .title {
+        float: left;
+        width: 20%;
+        margin-top: 6px;
+    }
+
+    .elements > .trading{
+        padding-top: 8px;
+    }
+
+        .elements > .title > i {
+            margin-right: 5px;
+            width: 17%;
+        }
+
+    .elements > .input {
+        float: right;
+        width: 80%;
+    }
+
+    .elements > .input-trading {
+        width: 64%;
+        padding-top: 6px;
+    }
+
+    .elements > .input-trading > a{
+        background: #0000FF;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .elements input {
+        width: 100%;
+        background: #F9F7F4;
+        padding: 6px 0;
+        border: none;
+    }
+
+    .elements > .input > a > input {
+        cursor: pointer !important;
+        font-weight: bold !important;
+    }
+
+    .elements textarea {
+        width: 98%;
+        background: #F9F7F4;
+        padding: 7px 7px;
+        min-height: 200px;
+        resize: none;
+        overflow: auto;
+    }
+
+.indicator {
+    margin-top: 10px !important;
+    text-align: center !important;
+    font-family: Verdana,sans-serif;
+}
+
+    .indicator button {
+        background-color: #e1e1e1 !important;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+        .indicator button:hover {
+            /*    background-color: #ccc!important;*/
+        }
+
+.slides-container {
+    position: relative;
+}
+
+
+.check-rules {
+    text-align: left;
+    margin-top: 5px;
+}
+
+    .check-rules input {
+        float: left;
+        width: 10%;
+    }
+
+.uploadBtn {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+    .uploadBtn input {
+        padding: 6px 30px;
+        text-align: center;
+        background: #372213;
+        color: #fff;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+/* =================================== for details book ===================================*/
+.title-upload p {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+.title-upload textarea {
+    clear: both;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    padding: 7px 7px;
+}
+
+.rate-book {
+    display: flow-root;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+    .rate-book .rate {
+        margin-top: 7px;
+        float: left;
+    }
+
+#star {
+    float: right;
+    margin-left: 5px;
+}
+
+.borrow-book{
+    width: 16%;
+}
+
+.borrow-book > input {
+    float: right !important;
+    padding: 6px 30px !important;
+    text-align: center !important;
+    background: #372213 !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.cover-book {
+    display: flex;
+    background: #EFF9FE;
+    margin-top: 15px;
+    padding: 15px 15px;
+    flex-flow: row;
+    justify-content: center;
+    border: 2px dashed #0099E2;
+}
+
+    .cover-book img {
+        width: 19%;
+        height: 6%;
+        margin: 0 5px;
+        border: 1px solid black;
+    }
+
+/* =================================== for review book =================================== */
+
+.review-book {
+    display: block;
+    margin-top: 15px;
+}
+
+.content-review {
+    margin-top: 10px;
+    padding: 5px 5px;
+    border: 1px dashed gray;
+}
+
+    .content-review article {
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+    }
+
+#content-article > article > b {
+    float: left;
+}
+
+#content-article > article > p {
+    float: right;
+}
+
+#content-article > article > textarea {
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    background: #F9F7F4;
+    padding: 7px 7px;
+    border: none;
+}
+
+.title-upload input[type='submit'] {
+    float: left;
+    padding: 4px 6px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #cd0d18;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#ctl00_ContentPlaceHolder1_UpdateProgress1 {
+    float: right;
+    width: 4%;
+    padding-right: 15px;
+    padding-left: 2px;
+}
+
+    #ctl00_ContentPlaceHolder1_UpdateProgress1 > img {
+        width: 100%;
+    }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #F9F7F4 !important;
+}
+
+.avatar {
+    float: left;
+    max-width: 33%;
+    margin-top: 20px;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.info {
+    float: right;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.avatar img {
+    width: 75%;
+    border-radius: 50%;
+}
+
+.avatar #ctl00_ContentPlaceHolder1_uploadAvatar {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #372213;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.fullname {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    background: #F9F7F4;
+    padding: 9px 0;
+    border: none;
+}
+
+.info p {
+    margin-bottom: 15px;
+}
+
+.info .rate {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #b3b3b3;
+}
+
+.info-book > .elements > .title {
+    margin-top: 3px;
+}
+
+.submit-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+    .submit-info button {
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #372213;
+        color: #fff;
+        font-size: 17px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }

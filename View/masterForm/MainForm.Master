@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainForm.master.cs" Inherits="booksahre.masterForm.MainForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="cover">
+        <img src="../img/cover.jpg" />
+    </div>
+    <div class="header" id="myheader">
+        <div class="main-header">
+            <div class="logo">
+                <a href="../Home.aspx">
+                    <b>Book</b>Share
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <b><a href="../Home.aspx">Home</a></b>
+                    </li>
+                    <li>
+                        <b><a href="../UploadBook.aspx">Upload Book</a></b>
+                    </li>
+                    <li>
+                        <b><a href="../TradingManagement.aspx">Trading</a></b>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="search-container">
+                    <form action="../SearchResult.aspx" method="get">
+                        <input type="text" placeholder="Search.." name="query" autocomplete="off" />
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="user-area">
+                <% if (Session["username"] == null)
+                    {%>
+                <b><a class="login" href="../Login.aspx">Login</a></b>
+                <b><a class="login" href="../RegisterPage.aspx">Register</a></b>
+                <%}
+                    else
+                    {%>
+                <div class="dropdown">
+                    <a class="login" href="Profile.aspx">
+                        <i class="fas fa-user">&nbsp;<%= Session["username"].ToString() %></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="Profile.aspx">Profile</a>
+                        <a href="../ChangePassword.aspx">Change password</a>
+                        <a href="../Login.aspx?command=logout">Logout</a>
+                    </div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <section class="section-left">
+                <h3>CURRENTLY READING</h3>
+                <div class="section-left-content">
+                    <svg width="49" height="68" viewBox="0 0 49 68" xmlns="http://www.w3.org/2000/svg">
+                        <title>Group 7 Copy 2</title>
+                        <path d="M47.886 8.268v-.386c-.23-1.546-1.537-2.318-2.844-1.777-1.537.695-2.997 1.39-4.535 2.009-2.613 1.081-5.15 2.24-7.84 3.322-1.69.696-3.382 1.546-5.073 2.241-2.536 1.082-5.073 2.164-7.686 3.246-1.307.54-2.614 1.236-3.92 1.7-1.922.695-3.844.772-5.842.463-1.922-.309-3.766-.695-5.534-1.854 1.307-.541 2.613-1.082 3.843-1.7 3.843-1.7 7.763-3.323 11.53-5.023C23.29 9.041 26.518 7.65 29.9 6.182c.538-.232 1-.618 1.691-.31a34.31 34.31 0 0 0 3.382 1.469V2.009c0-1.236-1.383-2.164-2.536-1.777-1.23.463-2.383 1.082-3.536 1.545-2.537 1.005-4.996 2.164-7.456 3.246-1.691.695-3.382 1.468-5.073 2.24-2.46 1.082-4.92 2.087-7.456 3.169-1.768.773-3.536 1.468-5.227 2.24-1.844.85-3.382 2.164-3.382 4.792.077 14.45 0 28.977 0 43.427a3.7 3.7 0 0 0 .308 1.545c.692 1.932 2.229 2.937 3.997 3.632 1.921.773 3.843 1.237 5.918 1.468 2.076.232 4.074.155 6.073-.463 2.92-.928 5.61-2.396 8.531-3.555 2.153-.927 4.305-1.932 6.38-2.859a756.083 756.083 0 0 0 8.84-3.786c2.075-.928 4.15-1.855 6.226-2.705.922-.386 1.537-1.236 1.537-2.24-.23-14.373-.23-28.978-.23-43.66zM31.9 50.15s-10.454-3.245-10.454-11.9c0-8.655 7.456-13.214 10.223-7.264 0 0 2.383-7.804 7.302-6.645 4.996.927 4.227 12.827-7.071 25.809z" fill="#B9AD99" fill-rule="evenodd" />
+                    </svg>
+                    <img src="../img/book-icon.svg" alt="book-icon" />
+                    <p>
+                        What books do you want<br />
+                        to find?
+                    </p>
+                </div>
+            </section>
+            <section class="section-left">
+                <h3>YOUR BOOK UPLOAD</h3>
+                <div class="section-left-content">
+                    <div class="book-color"></div>
+                    <div class="book-color-content">
+                        <h2>0</h2>
+                        <span>books upload</span>
+                        <br />
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <br />
+                        <a href="#">Upload book now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-left">
+                <h3>#CATEGORY</h3>
+                <div class="section-left-content">
+                    <ul>
+                        <li><a href="#">#Self-help books</a></li>
+                        <li><a href="#">#Autobiographies</a></li>
+                        <li><a href="#">#Comic books</a></li>
+                        <li><a href="#">#Technical books?</a></li>
+                        <li><a href="#">#Children's books?</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!--Đây là đoạn code nội dung cho page-->
+        <div class="content-center">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Kết thúc-->
+        <div class="content-right">
+            <nav class="nav-right">
+                <div class="heading">
+                    <h4>Share this page</h4>
+                </div>
+                <div class="nav-right-content">
+                    <span>
+                        <ul>
+                            <li>
+                                <a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=#localhost:44111/Home.aspx">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <span>Share on Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="share-twitter" href="#">
+                                    <i class="fab fa-twitter-square"></i>
+                                    <span>Share on Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="share-google-plus" href="#">
+                                    <i class="fab fa-google"></i>
+                                    <span>Share on Google+</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </nav>
+            <nav class="nav-right">
+                <div class="heading">
+                    <h4>Share a book</h4>
+                </div>
+                <div class="nav-right-content">
+                    <p>Everybody can share their books, it's easy.</p>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="footer" style="align-content: center;">
+        <hr />
+        <div style='text-align: center;'>
+            <div class="panel-default">
+                <div class="panel-heading">
+                    <blockquote class="blockquote ">
+                        <p>"You are not done with a book until you pass it to another reader."</p>
+                        <footer class="blockquote-footer">Donalyn Miller</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <p class='copyright'>Copyright BookShare - All Rights Reserved</p>
+    </div>
+    <script>
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        var header = document.getElementById("myheader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
