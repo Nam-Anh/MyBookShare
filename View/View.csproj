@@ -53,11 +53,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\View.dll" />
+    <Content Include="bin\View.pdb" />
     <Content Include="css\boxform.css" />
     <Content Include="css\style.css" />
     <Content Include="css\TableData.css" />
     <Content Include="css\uploadbook.css" />
     <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\View.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\View.dll" />
+    <Content Include="obj\Debug\View.pdb" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +94,9 @@
   <ItemGroup>
     <Content Include="masterForm\BoxForm.Master" />
     <Content Include="masterForm\MainForm.Master" />
+    <Content Include="bin\View.dll.config" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\View.csprojResolveAssemblyReference.cache" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -99,6 +109,9 @@
       <Project>{668ad236-604c-46a2-8c88-51550cf59629}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

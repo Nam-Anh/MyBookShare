@@ -12,6 +12,15 @@ namespace Model
         private int bookID;
         private double ratePoint;
 
+
+        public BookRatings(int id, int userID, int bookID, double ratePoint)
+        {
+            this.id = id;
+            this.userID = userID;
+            this.bookID = bookID;
+            this.ratePoint = ratePoint;
+        }
+
         public int Id
         {
             get

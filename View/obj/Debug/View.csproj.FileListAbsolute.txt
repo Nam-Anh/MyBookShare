@@ -12,3 +12,6 @@ C:\Users\nguye\Desktop\MyBookShare\View\bin\View.dll
 C:\Users\nguye\Desktop\MyBookShare\View\bin\View.pdb
 C:\Users\nguye\Desktop\MyBookShare\View\bin\DAL.dll
 C:\Users\nguye\Desktop\MyBookShare\View\bin\DAL.pdb
+C:\Users\lehuy\Documents\Git\MyBookShare\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\lehuy\Documents\Git\MyBookShare\View\obj\Debug\View.dll
+C:\Users\lehuy\Documents\Git\MyBookShare\View\obj\Debug\View.pdb
